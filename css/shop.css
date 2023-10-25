@@ -1,0 +1,29 @@
+
+:root{
+    --bs-body-bg: #00122e;
+    --bs-navbar-color: white;
+    --bs-body-font-family:"Urbanist";
+}
+
+.bg-light{
+    --bs-bg-opacity: none;
+    background-color: var(--bs-body-bg) !important;
+}
+
+.navbar{
+    --bs-navbar-active-color: var(--bs-navbar-color);
+    --bs-navbar-brand-color: var(--bs-navbar-color);
+    --bs-navbar-brand-hover-color: var(--bs-navbar-color);
+}
+.navbar-nav{
+    --bs-nav-link-color: var(--bs-navbar-color);
+    --bs-nav-link-hover-color: var(--bs-navbar-color);
+}
+
+.btn-dark{
+    --bs-btn-bg: var(--bs-body-bg);
+}
+
+#gameshop_header{
+    font-family: "Press Start 2P";
+}
