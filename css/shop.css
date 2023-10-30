@@ -3,6 +3,7 @@
     --bs-body-bg: #00122e;
     --bs-navbar-color: white;
     --bs-body-font-family:"Urbanist";
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 255, 255, 255%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 .bg-light{
@@ -20,6 +21,14 @@
     --bs-nav-link-hover-color: var(--bs-navbar-color);
 }
 
+.navbar-toggler{
+    border: var(--bs-border-width) solid var(--bs-navbar-color);
+    border-radius: var(--bs-navbar-color);
+    color: var(--bs-navbar-color);
+}
+.navbar-toggler-icon{
+    background-image: var(--bs-navbar-toggler-icon-bg);
+}
 .btn-dark{
     --bs-btn-bg: var(--bs-body-bg);
 }
