@@ -3,12 +3,6 @@
     --bs-body-bg: #00122e;
     --bs-navbar-color: white;
     --bs-body-font-family:"Urbanist";
-    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 255, 255, 255%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-
-.bg-light{
-    --bs-bg-opacity: none;
-    background-color: var(--bs-body-bg) !important;
 }
 
 .navbar{
@@ -26,13 +20,73 @@
     border-radius: var(--bs-navbar-color);
     color: var(--bs-navbar-color);
 }
+
 .navbar-toggler-icon{
-    background-image: var(--bs-navbar-toggler-icon-bg);
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    background-image: var(--bs-navbar-toggler-icon-bg) !important;
 }
-.btn-dark{
+.btn-dark-blue{
     --bs-btn-bg: var(--bs-body-bg);
+    color: white;
+}
+.border-bottom-gradient{
+    border-bottom: 1pt solid;
+    border-image: linear-gradient(90deg, rgba(0,18,46,0) 0%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 75%, rgba(0,18,46,0) 100%) 1;
+}
+.border-bottom-gradient-dark-blue{
+    border-bottom: 1pt solid;
+    border-image: linear-gradient(90deg, rgba(0,18,46,0) 0%, var(--bs-body-bg) 25%, var(--bs-body-bg) 75%, rgba(0,18,46,0) 100%) 1;
+}
+.border-dark{
+    border: 1pt solid black;
+}
+.border-white{
+    border: 1pt solid white;
+}
+.bg-dark-blue{
+    --bs-bg-opacity: none;
+    background-color: var(--bs-body-bg) !important;
+}
+.card.h-100 img{
+    height: 275px !important;
+    object-fit: cover;
+    overflow: hidden;
 }
 
+.product-detail-icon{
+    width: 50px;
+    height: 50px;
+    background-image: url(https://www.freeiconspng.com/thumbs/details-icon/details-icon-png-cc-by-3-0--it-1.png);
+}
+@media screen and (min-width: 601px) {
+    .btn.btn-sm{
+      display: none;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .btn.btn-md{
+        display: none;
+      }
+}
+.bg-yellow{
+    --bs-bg-opacity: 1;
+    background-color: rgba(255,255,0, var(--bs-bg-opacity)) !important;
+}
+.bg-lime{
+    --bs-bg-opacity: 1;
+    background-color: rgb(0,255,0, var(--bs-bg-opacity)) !important;
+}
 #gameshop_header{
     font-family: "Press Start 2P";
+}
+#page_header{
+    --img: url(https://media.revistagq.com/photos/645dde361c98f4b147443172/16:9/w_2560%2Cc_limit/100%2520mejores%2520videojuegos%2520gq.png);
+    --grad01: radial-gradient(circle, rgb(75, 75, 75) 0%, var(--bs-body-bg) 100%);
+
+    background-size: 100%;
+    background-image:
+        var(--img),
+        var(--grad01);
+    background-size: cover;
+    background-blend-mode: multiply;
 }
