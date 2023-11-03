@@ -54,6 +54,9 @@
 .border-gradient-x-dark-blue{
     border-image: linear-gradient(0deg, rgba(0,18,46,0) 0%, var(--bs-body-bg) 25%, var(--bs-body-bg) 75%, rgba(0,18,46,0) 100%) 1;
 }
+.border-black{
+    border-color: black !important;
+}
 .border-dark-blue{
     border-image: rgba(0, 34, 158);
 }
@@ -63,22 +66,38 @@
 .border-gradient-y-dark-blue{
     border-image: linear-gradient(90deg, rgba(0,18,46,0) 0%, var(--bs-body-bg) 25%, var(--bs-body-bg) 75%, rgba(0,18,46,0) 100%) 1;
 }
-.border-dark{
-    border: 1pt solid black;
-}
-.border-white{
-    border: 1pt solid white;
-}
+
 .bg-dark-blue{
     --bs-bg-opacity: none;
     background-color: var(--bs-body-bg) !important;
 }
+
+.game_opinion .col-md-9 .row .user_icon{
+    border-radius: 50%;
+    width: 30px !important;
+    height: 30px !important;
+}
+
 .card.h-100 img{
     height: 275px !important;
     object-fit: cover;
     overflow: hidden;
 }
-.card.mb-3 img{
+.game_opinion .card.h-100 img{
+    height: 450px !important;
+    object-fit: cover;
+    overflow: hidden;
+}
+@media (max-width: 768px){
+    .game_opinion .card.h-100 img{
+        display: none;
+    }
+    .game_opinion .col-md-9 .row .user_icon{
+        display: block;
+    }
+}
+
+.card.mb-3 .card-img-top{
     height: 275px !important;
     object-fit: cover;
     overflow: hidden;
@@ -94,6 +113,10 @@
 .bg-red{
     --bs-bg-opacity: 1;
     background-color: rgb(255,0,0, var(--bs-bg-opacity)) !important;
+}
+.bg-light-gray{
+    --bs-bg-opacity: 1;
+    background-color: rgb(225,225,225, var(--bs-bg-opacity)) !important;
 }
 .bg-gradient-black-transparent{
     background: rgb(13,13,13);
@@ -143,4 +166,8 @@
         var(--grad01);
     background-size: cover;
     background-blend-mode: multiply;
+}
+
+#quien_soy_yo{
+    font-size: 16pt;
 }
