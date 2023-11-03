@@ -19,7 +19,6 @@
 
 .navbar-toggler{
     border: var(--bs-border-width) solid var(--bs-navbar-color);
-    border-radius: var(--bs-navbar-color);
     color: var(--bs-navbar-color);
 }
 
@@ -58,7 +57,7 @@
     border-color: black !important;
 }
 .border-dark-blue{
-    border-image: rgba(0, 34, 158);
+    border-color: rgba(0, 34, 158);
 }
 .border-gradient-y{
     border-image: linear-gradient(90deg, rgba(0,18,46,0) 0%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 75%, rgba(0,18,46,0) 100%) 1;
@@ -104,7 +103,7 @@
 }
 .bg-yellow{
     --bs-bg-opacity: 1;
-    background-color: rgba(255,255,0, var(--bs-bg-opacity)) !important;
+    background-color: rgb(255,255,0, var(--bs-bg-opacity)) !important;
 }
 .bg-lime{
     --bs-bg-opacity: 1;
