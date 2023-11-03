@@ -1,4 +1,3 @@
-
 :root{
     --bs-body-bg: #00122e;
     --bs-navbar-color: white;
@@ -9,6 +8,9 @@
     --bs-navbar-active-color: var(--bs-navbar-color);
     --bs-navbar-brand-color: var(--bs-navbar-color);
     --bs-navbar-brand-hover-color: var(--bs-navbar-color);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 .navbar-nav{
     --bs-nav-link-color: var(--bs-navbar-color);
@@ -25,16 +27,40 @@
     --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
     background-image: var(--bs-navbar-toggler-icon-bg) !important;
 }
+
 .btn-dark-blue{
     --bs-btn-bg: var(--bs-body-bg);
     color: white;
 }
-.border-bottom-gradient{
-    border-bottom: 1pt solid;
+.border-right{
+    border-right: 1pt solid;
+}
+.border-left{
+    border-left: 1pt solid;
+}
+.border-x{
+    border-right: 1pt solid;
+    border-left: 1pt solid;
+}
+.border-gradient-x{
+    border-image: linear-gradient(0deg, rgba(0,18,46,0) 0%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 75%, rgba(0,18,46,0) 100%) 1;
+}
+.border-gradient-x-lime{
+    border-image: linear-gradient(0deg, rgba(0,18,46,0) 0%, rgba(0,255,0,1) 25%, rgba(0,255,0,1) 75%, rgba(0,18,46,0) 100%) 1;
+}
+.border-gradient-x-gold{
+    border-image: linear-gradient(0deg, rgba(0,18,46,0) 0%, rgb(218,165,32) 25%, rgb(218,165,32) 75%, rgba(0,18,46,0) 100%) 1;
+}
+.border-gradient-x-dark-blue{
+    border-image: linear-gradient(0deg, rgba(0,18,46,0) 0%, var(--bs-body-bg) 25%, var(--bs-body-bg) 75%, rgba(0,18,46,0) 100%) 1;
+}
+.border-dark-blue{
+    border-image: rgba(0, 34, 158);
+}
+.border-gradient-y{
     border-image: linear-gradient(90deg, rgba(0,18,46,0) 0%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 75%, rgba(0,18,46,0) 100%) 1;
 }
-.border-bottom-gradient-dark-blue{
-    border-bottom: 1pt solid;
+.border-gradient-y-dark-blue{
     border-image: linear-gradient(90deg, rgba(0,18,46,0) 0%, var(--bs-body-bg) 25%, var(--bs-body-bg) 75%, rgba(0,18,46,0) 100%) 1;
 }
 .border-dark{
@@ -52,22 +78,6 @@
     object-fit: cover;
     overflow: hidden;
 }
-
-.product-detail-icon{
-    width: 50px;
-    height: 50px;
-    background-image: url(https://www.freeiconspng.com/thumbs/details-icon/details-icon-png-cc-by-3-0--it-1.png);
-}
-@media screen and (min-width: 601px) {
-    .btn.btn-sm{
-      display: none;
-    }
-  }
-  @media screen and (max-width: 600px) {
-    .btn.btn-md{
-        display: none;
-      }
-}
 .bg-yellow{
     --bs-bg-opacity: 1;
     background-color: rgba(255,255,0, var(--bs-bg-opacity)) !important;
@@ -75,6 +85,10 @@
 .bg-lime{
     --bs-bg-opacity: 1;
     background-color: rgb(0,255,0, var(--bs-bg-opacity)) !important;
+}
+.bg-red{
+    --bs-bg-opacity: 1;
+    background-color: rgb(255,0,0, var(--bs-bg-opacity)) !important;
 }
 #gameshop_header{
     font-family: "Press Start 2P";

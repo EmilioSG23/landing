@@ -18,26 +18,27 @@
     </head>
     <body>
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg bg-dark-blue border-bottom-gradient">
+        <nav class="navbar navbar-expand-lg bg-primary border-bottom border-gradient-y">
             <div class="container px-4 px-lg-5">
-                <a id="gameshop_header"class="navbar-brand" href="#!">Gameshop</a>
+                <a id="gameshop_header"class="navbar-brand">Gameshop</a>
                 <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Página principal</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Acerca de</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4 mx-1">
+                        <li class="nav-item dropdown border-right">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Catálogo</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#!">Todos los productos</a></li>
+                                <li><a class="dropdown-item" href="#novedades">Novedades</a></li>
+                                <li><a class="dropdown-item" href="#populares">Juegos populares</a></li>
                                 <li><hr class="dropdown-divider" /></li>
-                                <li><a class="dropdown-item" href="#!">Juegos populares</a></li>
-                                <li><a class="dropdown-item" href="#!">Novedades</a></li>
+                                <li><a class="dropdown-item" href="#catalogo">Todos los productos</a></li>
                             </ul>
                         </li>
+                        <li class="nav-item border-right"><a class="nav-link active border-bottom border-gradient-y" aria-current="page" href="#!">Página principal</a></li>
+                        <li class="nav-item border-right"><a class="nav-link" href="#!">Acerca de</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">Comunidad</a></li>
                     </ul>
                     <form class="d-flex">
-                        <button class="btn btn-dark-blue btn-outline-light" type="submit">
+                        <button class="btn btn-primary btn-outline-light" type="submit">
                             <i class="bi-cart-fill me-1"></i>
                             En carrito
                             <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
@@ -47,7 +48,7 @@
             </div>
         </nav>
         <!-- Header-->
-        <header class="py-5 border-bottom-gradient" id="page_header">
+        <header class="py-5 border-bottom border-gradient-y" id="page_header">
             <div class="container px-4 px-lg-5 my-5">
                 <div class="text-center text-white">
                     <h1 id="gameshop_header" class="display-4 fw-bolder">Gameshop</h1>
@@ -56,24 +57,24 @@
             </div>
         </header>
         <!-- Section NOVEDADES-->
-        <section class="">
-            <div class="container px-4 px-lg-5 mt-4">
+        <section class="" id="novedades">
+            <div class="container px-4 px-lg-5 mt-4 border-x border-gradient-x-lime">
                 <div>
-                    <h2 class="text-white fw-bolder border-bottom-gradient py-2 text-center">¡Últimas Novedades!</h2>
+                    <h2 class="text-white fw-bolder border-bottom border-gradient-y py-2 text-center">¡Últimas Novedades!</h2>
                 </div>
-                <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-3 row-cols-xl-3 justify-content-center my-3">
+                <div class="row gx-4 gx-lg-$ row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-3 justify-content-center my-3">
                     <!-- Carta: SPIDERMAN 2-->
                     <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Popular-->
                             <div class="badge bg-yellow text-black position-absolute border-dark" style="top: 0.5rem; right: 0.5rem">¡Más popular!</div>
                             <!-- Product image-->
-                            <img class="card-img-top border-bottom-gradient-dark-blue" src="https://image.api.playstation.com/vulcan/ap/rnd/202306/1219/1c7b75d8ed9271516546560d219ad0b22ee0a263b4537bd8.png" alt="..." />
+                            <img class="card-img-top" src="https://image.api.playstation.com/vulcan/ap/rnd/202306/1219/1c7b75d8ed9271516546560d219ad0b22ee0a263b4537bd8.png" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder border-bottom-gradient-dark-blue pb-2">Marvel's Spider-Man 2</h5>
+                                    <h5 class="fw-bolder border-bottom border-gradient-y-dark-blue pb-2">Marvel's Spider-Man 2</h5>
                                     <!-- Product reviews-->
                                     <div class="d-flex justify-content-center small text-warning mb-2">
                                         <div class="bi-star-fill"></div>
@@ -88,14 +89,12 @@
                                 </div>
                             </div>
                             <!-- Product actions-->
-                            <div class="d-flex flex-row justify-content-center">
+                            <div class="container d-flex flex-column flex-sm-row justify-content-center">
                                 <div class="card-footer px-1 py-3 pt-0 border-top-0 bg-transparent">
                                     <div class="text-center"><a class="btn btn-outline-dark btn-md" href="#">Ver detalles</a></div>
-                                    <div class="text-center"><a class="btn btn-outline-dark btn-sm" href="#">Ver detalles</a></div>
                                 </div>
                                 <div class="card-footer px-1 py-3 pt-0 border-top-0 bg-transparent">
                                     <div class="text-center"><a class="btn btn-dark-blue btn-outline-primary btn-md" href="#">Agregar juego</a></div>
-                                    <div class="text-center"><a class="btn btn-dark-blue btn-outline-primary btn-sm" href="#">Agregar juego</a></div>
                                 </div>
                             </div>
                         </div>
@@ -106,12 +105,12 @@
                             <!-- Sale badge-->
                             <div class="badge bg-primary text-white position-absolute border-white" style="top: 0.5rem; right: 0.5rem">Descuento</div>
                             <!-- Product image-->
-                            <img class="card-img-top border-bottom-gradient-dark-blue" src="https://image.api.playstation.com/vulcan/ap/rnd/202307/0710/02c58aabf3579a5b5d9ff4ae72775e46c5d0e23d2bb1c020.png" alt="..." />
+                            <img class="card-img-top" src="https://image.api.playstation.com/vulcan/ap/rnd/202307/0710/02c58aabf3579a5b5d9ff4ae72775e46c5d0e23d2bb1c020.png" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder border-bottom-gradient-dark-blue pb-2">EA Sports FC 24</h5>
+                                    <h5 class="fw-bolder border-bottom border-gradient-y-dark-blue pb-2">EA Sports FC 24</h5>
                                     <!-- Product reviews-->
                                     <div class="d-flex justify-content-center small text-warning mb-2">
                                         <div class="bi-star-fill"></div>
@@ -127,14 +126,12 @@
                                 </div>
                             </div>
                             <!-- Product actions-->
-                            <div class="d-flex flex-row justify-content-center">
+                            <div class="d-flex flex-column flex-sm-row justify-content-center">
                                 <div class="card-footer px-1 py-3 pt-0 border-top-0 bg-transparent">
                                     <div class="text-center"><a class="btn btn-outline-dark btn-md" href="#">Ver detalles</a></div>
-                                    <div class="text-center"><a class="btn btn-outline-dark btn-sm" href="#">Ver detalles</a></div>
                                 </div>
                                 <div class="card-footer px-1 py-3 pt-0 border-top-0 bg-transparent">
                                     <div class="text-center"><a class="btn btn-dark-blue btn-outline-primary btn-md" href="#">Agregar juego</a></div>
-                                    <div class="text-center"><a class="btn btn-dark-blue btn-outline-primary btn-sm" href="#">Agregar juego</a></div>
                                 </div>
                             </div>
                         </div>
@@ -145,12 +142,12 @@
                             <!-- Sale badge-->
                             <div class="badge bg-lime text-dark position-absolute border-dark" style="top: 0.5rem; right: 0.5rem">¡Novedad!</div>
                             <!-- Product image-->
-                            <img class="card-img-top border-bottom-gradient-dark-blue" src="https://www.instant-gaming.com/images/products/8863/616x353/cities-skylines-2-pc-game-cover.jpg?v=1657004400" alt="..." />
+                            <img class="card-img-top" src="https://www.instant-gaming.com/images/products/8863/616x353/cities-skylines-2-pc-game-cover.jpg?v=1657004400" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder border-bottom-gradient-dark-blue pb-2">Cities Skylines 2</h5>
+                                    <h5 class="fw-bolder border-bottom border-gradient-y-dark-blue pb-2">Cities Skylines 2</h5>
                                     <!-- Product reviews-->
                                     <div class="d-flex justify-content-center small text-warning mb-2">
                                         <div class="bi-star-fill"></div>
@@ -165,14 +162,12 @@
                                 </div>
                             </div>
                             <!-- Product actions-->
-                            <div class="d-flex flex-row justify-content-center">
+                            <div class="d-flex flex-column flex-sm-row justify-content-center">
                                 <div class="card-footer px-1 py-3 pt-0 border-top-0 bg-transparent">
                                     <div class="text-center"><a class="btn btn-outline-dark btn-md" href="#">Ver detalles</a></div>
-                                    <div class="text-center"><a class="btn btn-outline-dark btn-sm" href="#">Ver detalles</a></div>
                                 </div>
                                 <div class="card-footer px-1 py-3 pt-0 border-top-0 bg-transparent">
                                     <div class="text-center"><a class="btn btn-dark-blue btn-outline-primary btn-md" href="#">Agregar juego</a></div>
-                                    <div class="text-center"><a class="btn btn-dark-blue btn-outline-primary btn-sm" href="#">Agregar juego</a></div>
                                 </div>
                             </div>
                         </div>
@@ -183,12 +178,12 @@
                             <!-- Sale badge-->
                             <div class="badge bg-lime text-dark position-absolute border-dark" style="top: 0.5rem; right: 0.5rem">¡Novedad!</div>
                             <!-- Product image-->
-                            <img class="card-img-top border-bottom-gradient-dark-blue" src="https://sm.ign.com/ign_es/cover/j/just-dance/just-dance-2024-edition_wt2d.jpg" alt="..." />
+                            <img class="card-img-top" src="https://sm.ign.com/ign_es/cover/j/just-dance/just-dance-2024-edition_wt2d.jpg" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder border-bottom-gradient-dark-blue pb-2">Just Dance 2024 Edition</h5>
+                                    <h5 class="fw-bolder border-bottom border-gradient-y-dark-blue pb-2">Just Dance 2024 Edition</h5>
                                     <!-- Product reviews-->
                                     <div class="d-flex justify-content-center small text-warning mb-2">
                                         <div class="bi-star-fill"></div>
@@ -203,14 +198,12 @@
                                 </div>
                             </div>
                             <!-- Product actions-->
-                            <div class="d-flex flex-row justify-content-center">
+                            <div class="d-flex flex-column flex-sm-row justify-content-center">
                                 <div class="card-footer px-1 py-3 pt-0 border-top-0 bg-transparent">
                                     <div class="text-center"><a class="btn btn-outline-dark btn-md" href="#">Ver detalles</a></div>
-                                    <div class="text-center"><a class="btn btn-outline-dark btn-sm" href="#">Ver detalles</a></div>
                                 </div>
                                 <div class="card-footer px-1 py-3 pt-0 border-top-0 bg-transparent">
                                     <div class="text-center"><a class="btn btn-dark-blue btn-outline-primary btn-md" href="#">Agregar juego</a></div>
-                                    <div class="text-center"><a class="btn btn-dark-blue btn-outline-primary btn-sm" href="#">Agregar juego</a></div>
                                 </div>
                             </div>
                         </div>
@@ -221,12 +214,12 @@
                             <!-- Sale badge-->
                             <div class="badge bg-primary text-white position-absolute border-white" style="top: 0.5rem; right: 0.5rem">Descuento</div>
                             <!-- Product image-->
-                            <img class="card-img-top border-bottom-gradient-dark-blue" src="https://images.ctfassets.net/rporu91m20dc/1vGpDXk4zHZ5DCdvmUKO5S/6db693854372aa47a155474b6cc346cf/Starfield_LargeHero_Date.jpg?fm=jpg&q=70" alt="..." />
+                            <img class="card-img-top" src="https://images.ctfassets.net/rporu91m20dc/1vGpDXk4zHZ5DCdvmUKO5S/6db693854372aa47a155474b6cc346cf/Starfield_LargeHero_Date.jpg?fm=jpg&q=70" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder border-bottom-gradient-dark-blue pb-2">Starfield</h5>
+                                    <h5 class="fw-bolder border-bottom border-gradient-y-dark-blue pb-2">Starfield</h5>
                                     <!-- Product reviews-->
                                     <div class="d-flex justify-content-center small text-warning mb-2">
                                         <div class="bi-star-fill"></div>
@@ -234,22 +227,20 @@
                                         <div class="bi-star-fill"></div>
                                         <div class="bi-star"></div>
                                         <div class="bi-star"></div>
-                                        <span class="mx-1">2.75/5</span>
+                                        <span class="mx-1">2.75</span>
                                     </div>
                                     <!-- Product price-->
                                     <span class="text-muted text-decoration-line-through">$50.00</span>
-                                    $25.00
+                                    $40.00
                                 </div>
                             </div>
                             <!-- Product actions-->
-                            <div class="d-flex flex-row justify-content-center">
+                            <div class="d-flex flex-column flex-sm-row justify-content-center">
                                 <div class="card-footer px-1 py-3 pt-0 border-top-0 bg-transparent">
                                     <div class="text-center"><a class="btn btn-outline-dark btn-md" href="#">Ver detalles</a></div>
-                                    <div class="text-center"><a class="btn btn-outline-dark btn-sm" href="#">Ver detalles</a></div>
                                 </div>
                                 <div class="card-footer px-1 py-3 pt-0 border-top-0 bg-transparent">
                                     <div class="text-center"><a class="btn btn-dark-blue btn-outline-primary btn-md" href="#">Agregar juego</a></div>
-                                    <div class="text-center"><a class="btn btn-dark-blue btn-outline-primary btn-sm" href="#">Agregar juego</a></div>
                                 </div>
                             </div>
                         </div>
@@ -260,12 +251,12 @@
                             <!-- Sale badge-->
                             <div class="badge bg-lime text-dark position-absolute border-dark" style="top: 0.5rem; right: 0.5rem">¡Novedad!</div>
                             <!-- Product image-->
-                            <img class="card-img-top border-bottom-gradient-dark-blue" src="https://image.api.playstation.com/vulcan/ap/rnd/202309/0618/36ed2eda6185435322623473185b7ec765875be46b9b3a83.jpg" alt="..." />
+                            <img class="card-img-top" src="https://image.api.playstation.com/vulcan/ap/rnd/202309/0618/36ed2eda6185435322623473185b7ec765875be46b9b3a83.jpg" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder border-bottom-gradient-dark-blue pb-2">EA Sports UFC 5</h5>
+                                    <h5 class="fw-bolder border-bottom border-gradient-y-dark-blue pb-2">EA Sports UFC 5</h5>
                                     <!-- Product reviews-->
                                     <div class="d-flex justify-content-center small text-warning mb-2">
                                         <div class="bi-star-fill"></div>
@@ -281,14 +272,12 @@
                                 </div>
                             </div>
                             <!-- Product actions-->
-                            <div class="d-flex flex-row justify-content-center">
+                            <div class="d-flex flex-column flex-sm-row justify-content-center">
                                 <div class="card-footer px-1 py-3 pt-0 border-top-0 bg-transparent">
                                     <div class="text-center"><a class="btn btn-outline-dark btn-md" href="#">Ver detalles</a></div>
-                                    <div class="text-center"><a class="btn btn-outline-dark btn-sm" href="#">Ver detalles</a></div>
                                 </div>
                                 <div class="card-footer px-1 py-3 pt-0 border-top-0 bg-transparent">
                                     <div class="text-center"><a class="btn btn-dark-blue btn-outline-primary btn-md" href="#">Agregar juego</a></div>
-                                    <div class="text-center"><a class="btn btn-dark-blue btn-outline-primary btn-sm" href="#">Agregar juego</a></div>
                                 </div>
                             </div>
                         </div>
@@ -297,216 +286,674 @@
                 </div>
             </div>
         </section>
-            <!-- Section BÚSQUEDA-->
-            <section class="pt-3 container px-4 px-lg-5 justify-content-center">
-                <h2 class="text-white fw-bolder border-bottom-gradient py-2 text-center">Busca tu videojuego</h2>
-                <div class="input-group input-group-md">
+         <!-- Section POPULARES-->
+         <section class="" id="populares">
+            <div class="container px-4 px-lg-5 mt-4 border-x border-gradient-x-gold">
+                <div>
+                    <h2 class="text-white fw-bolder border-bottom border-gradient-y py-2 text-center">Juegos más populares</h2>
+                </div>
+                <div class="row gx-4 gx-lg-$ row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-3 justify-content-center my-3">
+                    <!-- Carta: MINECRAFT-->
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Popular-->
+                            <div class="badge bg-yellow text-black position-absolute border-dark" style="top: 0.5rem; right: 0.5rem">¡Más popular!</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://www.lavanguardia.com/andro4all/hero/2023/07/como-instalar-mods-de-minecraft-en-un-movil-android.jpg?width=1200&aspect_ratio=16:9" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder border-bottom border-gradient-y-dark-blue pb-2">Minecraft</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <span class="mx-1">5.0</span>
+                                    </div>
+                                    <!-- Product price-->
+                                    $35.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="container d-flex flex-column flex-sm-row justify-content-center">
+                                <div class="card-footer px-1 py-3 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-outline-dark btn-md" href="#">Ver detalles</a></div>
+                                </div>
+                                <div class="card-footer px-1 py-3 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-dark-blue btn-outline-primary btn-md" href="#">Agregar juego</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carta: GTA V-->
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-primary text-white position-absolute border-white" style="top: 0.5rem; right: 0.5rem">Descuento</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://cdn.rudo.video/upload/us/ecuavisa/1104833/64edc911ea37a_1104833.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder border-bottom border-gradient-y-dark-blue pb-2">Grand Theft Auto V</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star"></div>
+                                        <span class="mx-1">4.3</span>
+                                    </div>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">$80.00</span>
+                                    $20.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="d-flex flex-column flex-sm-row justify-content-center">
+                                <div class="card-footer px-1 py-3 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-outline-dark btn-md" href="#">Ver detalles</a></div>
+                                </div>
+                                <div class="card-footer px-1 py-3 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-dark-blue btn-outline-primary btn-md" href="#">Agregar juego</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carta: FORTNITE-->
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-red text-white position-absolute border-white" style="top: 0.5rem; right: 0.5rem">¡Gratis!</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://cdn.sortiraparis.com/images/80/66131/908390-fortnite-enfer-vert-map-skins-passe-de-combat-le-point-sur-les-nouveautes-de-la-saison-3.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder border-bottom border-gradient-y-dark-blue pb-2">Fortnite</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star"></div>
+                                        <span class="mx-1">4.40</span>
+                                    </div>
+                                    <!-- Product price-->
+                                    ¡Gratis!
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="d-flex flex-column flex-sm-row justify-content-center">
+                                <div class="card-footer px-1 py-3 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-outline-dark btn-md" href="#">Ver detalles</a></div>
+                                </div>
+                                <div class="card-footer px-1 py-3 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-dark-blue btn-outline-primary btn-md" href="#">Agregar juego</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carta: CS2-->
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-lime text-dark position-absolute border-dark" style="top: 0.5rem; right: 0.5rem">¡Novedad!</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://cdn.cloudflare.steamstatic.com/steam/apps/730/capsule_616x353.jpg?t=1698860631" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder border-bottom border-gradient-y-dark-blue pb-2">Counter Strike 2</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star"></div>
+                                        <div class="bi-star"></div>
+                                        <span class="mx-1">4.2</span>
+                                    </div>
+                                    <!-- Product price-->
+                                    $25.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="d-flex flex-column flex-sm-row justify-content-center">
+                                <div class="card-footer px-1 py-3 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-outline-dark btn-md" href="#">Ver detalles</a></div>
+                                </div>
+                                <div class="card-footer px-1 py-3 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-dark-blue btn-outline-primary btn-md" href="#">Agregar juego</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carta: LOL-->
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-red text-white position-absolute border-white" style="top: 0.5rem; right: 0.5rem">¡Gratis!</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://piks.eldesmarque.com/bin/esports/2019/09/LoL2.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder border-bottom border-gradient-y-dark-blue pb-2">League of Legends</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star"></div>
+                                        <div class="bi-star"></div>
+                                        <span class="mx-1">3.8</span>
+                                    </div>
+                                    <!-- Product price-->
+                                    ¡Gratis!
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="d-flex flex-column flex-sm-row justify-content-center">
+                                <div class="card-footer px-1 py-3 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-outline-dark btn-md" href="#">Ver detalles</a></div>
+                                </div>
+                                <div class="card-footer px-1 py-3 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-dark-blue btn-outline-primary btn-md" href="#">Agregar juego</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carta: COD WARZONE-->
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://assets.xboxservices.com/assets/db/88/db8834a9-115d-45e7-a9b5-fa4216b2aac2.jpg?n=CoD-Warzone_GLP-Page-Hero-1084_1920x1080_04.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder border-bottom border-gradient-y-dark-blue pb-2">Call of Duty: Warzone</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star"></div>
+                                        <div class="bi-star"></div>
+                                        <span class="mx-1">3.8</span>
+                                    </div>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">$50.00</span>
+                                    $50.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="d-flex flex-column flex-sm-row justify-content-center">
+                                <div class="card-footer px-1 py-3 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-outline-dark btn-md" href="#">Ver detalles</a></div>
+                                </div>
+                                <div class="card-footer px-1 py-3 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-dark-blue btn-outline-primary btn-md" href="#">Agregar juego</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+            
+        <!-- Section CATÁLOGO-->
+        <section id="catalogo" class="border-bottom border-gradient-y">
+            <!-- CUADRO DE BUSQUEDA-->
+            <div class="container">
+                <h2 class="text-white fw-bolder border-bottom border-gradient-y py-2 text-center">Catálogo</h2>
+            </div>
+            <div class="container pt-3 px-4 px-lg-5 justify-content-center">
+                <div class="input-group input-group-md mt-4">
                     <input type="search" class="form-control" placeholder="Busca tu videojuego"/>
                     <button type="button" class="btn btn-primary">
                         <i class="bi bi-search mx-4"></i>
                     </button>
                 </div>
-            </section>
-        <!-- Section CATÁLOGO-->
-        <section class="border-bottom-gradient">
-            <div class="container px-4 px-lg-5 mt-4">
-                <div>
-                    <h2 class="text-white fw-bolder border-bottom-gradient py-2 text-center">Catálogo</h2>
-                </div>
-                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center my-3">
+            </div>
+            <!-- CATÁLOGO -->
+            <div class="container px-4 px-lg-5 mt-5">
+                <div class="row gx-3 gx-lg-3 row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 justify-content-center my-3">
+                    <!-- Carta: TEMPLATE-->
                     <div class="col mb-5">
                         <div class="card h-100">
+                            <!-- Etiqueta-->
+                            <div class="badge bg-dark text-white position-absolute border-dark" style="top: 0.5rem; right: 0.5rem">Etiqueta</div>
                             <!-- Product image-->
-                            <img class="card-img-top border-bottom-gradient-dark-blue" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                            <img class="card-img-top" src="assets/console_placeholder.png" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder">Fancy Product</h5>
-                                    <!-- Product price-->
-                                    $40.00 - $80.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View options</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                            <!-- Product image-->
-                            <img class="card-img-top border-bottom-gradient-dark-blue" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Special Item</h5>
+                                    <h5 class="fw-bolder border-bottom border-gradient-y-dark-blue pb-2">Juego con Etiqueta</h5>
                                     <!-- Product reviews-->
                                     <div class="d-flex justify-content-center small text-warning mb-2">
                                         <div class="bi-star-fill"></div>
                                         <div class="bi-star-fill"></div>
                                         <div class="bi-star-fill"></div>
                                         <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star"></div>
+                                        <span class="mx-1">4.0</span>
                                     </div>
                                     <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">$20.00</span>
-                                    $18.00
+                                    $00.00
                                 </div>
                             </div>
                             <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                            <div class="d-flex flex-column flex-sm-row justify-content-center">
+                                <div class="card-footer px-1 py-3 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-outline-dark btn-md" href="#">Ver detalles</a></div>
+                                </div>
+                                <div class="card-footer px-1 py-3 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-dark-blue btn-outline-primary btn-md" href="#">Agregar juego</a></div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <!-- Carta: TEMPLATE-->
                     <div class="col mb-5">
                         <div class="card h-100">
-                            <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                            <!-- Etiqueta-->
+                            <div class="badge bg-yellow text-black position-absolute border-dark" style="top: 0.5rem; right: 0.5rem">¡Más popular!</div>
                             <!-- Product image-->
-                            <img class="card-img-top border-bottom-gradient-dark-blue" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                            <img class="card-img-top" src="assets/console_placeholder.png" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder">Sale Item</h5>
-                                    <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">$50.00</span>
-                                    $25.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top border-bottom-gradient-dark-blue" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Popular Item</h5>
+                                    <h5 class="fw-bolder border-bottom border-gradient-y-dark-blue pb-2">Juego más popular</h5>
                                     <!-- Product reviews-->
                                     <div class="d-flex justify-content-center small text-warning mb-2">
                                         <div class="bi-star-fill"></div>
                                         <div class="bi-star-fill"></div>
                                         <div class="bi-star-fill"></div>
                                         <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star"></div>
+                                        <span class="mx-1">4.0</span>
                                     </div>
                                     <!-- Product price-->
-                                    $40.00
+                                    $00.00
                                 </div>
                             </div>
                             <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                            <div class="d-flex flex-column flex-sm-row justify-content-center">
+                                <div class="card-footer px-1 py-3 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-outline-dark btn-md" href="#">Ver detalles</a></div>
+                                </div>
+                                <div class="card-footer px-1 py-3 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-dark-blue btn-outline-primary btn-md" href="#">Agregar juego</a></div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <!-- Carta: TEMPLATE-->
                     <div class="col mb-5">
                         <div class="card h-100">
-                            <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                            <!-- Etiqueta-->
+                            <div class="badge bg-primary text-white position-absolute border-white" style="top: 0.5rem; right: 0.5rem">Descuento</div>
                             <!-- Product image-->
-                            <img class="card-img-top border-bottom-gradient-dark-blue" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                            <img class="card-img-top" src="assets/console_placeholder.png" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder">Sale Item</h5>
-                                    <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">$50.00</span>
-                                    $25.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top border-bottom-gradient-dark-blue" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Fancy Product</h5>
-                                    <!-- Product price-->
-                                    $120.00 - $280.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View options</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                            <!-- Product image-->
-                            <img class="card-img-top border-bottom-gradient-dark-blue" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Special Item</h5>
+                                    <h5 class="fw-bolder border-bottom border-gradient-y-dark-blue pb-2">Juego en descuento</h5>
                                     <!-- Product reviews-->
                                     <div class="d-flex justify-content-center small text-warning mb-2">
                                         <div class="bi-star-fill"></div>
                                         <div class="bi-star-fill"></div>
                                         <div class="bi-star-fill"></div>
                                         <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star"></div>
+                                        <span class="mx-1">4.0</span>
                                     </div>
                                     <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">$20.00</span>
-                                    $18.00
+                                    <span class="text-muted text-decoration-line-through">$00.00</span>
+                                    $00.00
                                 </div>
                             </div>
                             <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                            <div class="d-flex flex-column flex-sm-row justify-content-center">
+                                <div class="card-footer px-1 py-3 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-outline-dark btn-md" href="#">Ver detalles</a></div>
+                                </div>
+                                <div class="card-footer px-1 py-3 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-dark-blue btn-outline-primary btn-md" href="#">Agregar juego</a></div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <!-- Carta: TEMPLATE-->
                     <div class="col mb-5">
                         <div class="card h-100">
+                            <!-- Etiqueta-->
+                            <div class="badge bg-lime text-black position-absolute border-dark" style="top: 0.5rem; right: 0.5rem">¡Novedad!</div>
                             <!-- Product image-->
-                            <img class="card-img-top border-bottom-gradient-dark-blue" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                            <img class="card-img-top" src="assets/console_placeholder.png" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder">Popular Item</h5>
+                                    <h5 class="fw-bolder border-bottom border-gradient-y-dark-blue pb-2">Juego nuevo</h5>
                                     <!-- Product reviews-->
                                     <div class="d-flex justify-content-center small text-warning mb-2">
                                         <div class="bi-star-fill"></div>
                                         <div class="bi-star-fill"></div>
                                         <div class="bi-star-fill"></div>
                                         <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star"></div>
+                                        <span class="mx-1">4.0</span>
                                     </div>
                                     <!-- Product price-->
-                                    $40.00
+                                    $00.00
                                 </div>
                             </div>
                             <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                            <div class="d-flex flex-column flex-sm-row justify-content-center">
+                                <div class="card-footer px-1 py-3 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-outline-dark btn-md" href="#">Ver detalles</a></div>
+                                </div>
+                                <div class="card-footer px-1 py-3 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-dark-blue btn-outline-primary btn-md" href="#">Agregar juego</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carta: TEMPLATE-->
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Etiqueta-->
+                            <div class="badge bg-red text-white position-absolute border-white" style="top: 0.5rem; right: 0.5rem">¡Gratis!</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="assets/console_placeholder.png" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder border-bottom border-gradient-y-dark-blue pb-2">Juego gratis</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star"></div>
+                                        <span class="mx-1">4.0</span>
+                                    </div>
+                                    <!-- Product price-->
+                                    ¡Gratis!
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="d-flex flex-column flex-sm-row justify-content-center">
+                                <div class="card-footer px-1 py-3 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-outline-dark btn-md" href="#">Ver detalles</a></div>
+                                </div>
+                                <div class="card-footer px-1 py-3 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-dark-blue btn-outline-primary btn-md" href="#">Agregar juego</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carta: TEMPLATE-->
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="assets/console_placeholder.png" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder border-bottom border-gradient-y-dark-blue pb-2">Lorem Ipsum</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star"></div>
+                                        <span class="mx-1">4.0</span>
+                                    </div>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">$00.00</span>
+                                    $00.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="d-flex flex-column flex-sm-row justify-content-center">
+                                <div class="card-footer px-1 py-3 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-outline-dark btn-md" href="#">Ver detalles</a></div>
+                                </div>
+                                <div class="card-footer px-1 py-3 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-dark-blue btn-outline-primary btn-md" href="#">Agregar juego</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carta: TEMPLATE-->
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="assets/console_placeholder.png" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder border-bottom border-gradient-y-dark-blue pb-2">Lorem Ipsum</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star"></div>
+                                        <span class="mx-1">4.0</span>
+                                    </div>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">$00.00</span>
+                                    $00.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="d-flex flex-column flex-sm-row justify-content-center">
+                                <div class="card-footer px-1 py-3 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-outline-dark btn-md" href="#">Ver detalles</a></div>
+                                </div>
+                                <div class="card-footer px-1 py-3 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-dark-blue btn-outline-primary btn-md" href="#">Agregar juego</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carta: TEMPLATE-->
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="assets/console_placeholder.png" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder border-bottom border-gradient-y-dark-blue pb-2">Lorem Ipsum</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star"></div>
+                                        <span class="mx-1">4.0</span>
+                                    </div>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">$00.00</span>
+                                    $00.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="d-flex flex-column flex-sm-row justify-content-center">
+                                <div class="card-footer px-1 py-3 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-outline-dark btn-md" href="#">Ver detalles</a></div>
+                                </div>
+                                <div class="card-footer px-1 py-3 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-dark-blue btn-outline-primary btn-md" href="#">Agregar juego</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carta: TEMPLATE-->
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="assets/console_placeholder.png" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder border-bottom border-gradient-y-dark-blue pb-2">Lorem Ipsum</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star"></div>
+                                        <span class="mx-1">4.0</span>
+                                    </div>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">$00.00</span>
+                                    $00.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="d-flex flex-column flex-sm-row justify-content-center">
+                                <div class="card-footer px-1 py-3 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-outline-dark btn-md" href="#">Ver detalles</a></div>
+                                </div>
+                                <div class="card-footer px-1 py-3 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-dark-blue btn-outline-primary btn-md" href="#">Agregar juego</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carta: TEMPLATE-->
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="assets/console_placeholder.png" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder border-bottom border-gradient-y-dark-blue pb-2">Lorem Ipsum</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star"></div>
+                                        <span class="mx-1">4.0</span>
+                                    </div>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">$00.00</span>
+                                    $00.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="d-flex flex-column flex-sm-row justify-content-center">
+                                <div class="card-footer px-1 py-3 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-outline-dark btn-md" href="#">Ver detalles</a></div>
+                                </div>
+                                <div class="card-footer px-1 py-3 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-dark-blue btn-outline-primary btn-md" href="#">Agregar juego</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carta: TEMPLATE-->
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="assets/console_placeholder.png" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder border-bottom border-gradient-y-dark-blue pb-2">Lorem Ipsum</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star"></div>
+                                        <span class="mx-1">4.0</span>
+                                    </div>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">$00.00</span>
+                                    $00.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="d-flex flex-column flex-sm-row justify-content-center">
+                                <div class="card-footer px-1 py-3 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-outline-dark btn-md" href="#">Ver detalles</a></div>
+                                </div>
+                                <div class="card-footer px-1 py-3 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-dark-blue btn-outline-primary btn-md" href="#">Agregar juego</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carta: TEMPLATE-->
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="assets/console_placeholder.png" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder border-bottom border-gradient-y-dark-blue pb-2">Lorem Ipsum</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star"></div>
+                                        <span class="mx-1">4.0</span>
+                                    </div>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">$00.00</span>
+                                    $00.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="d-flex flex-column flex-sm-row justify-content-center">
+                                <div class="card-footer px-1 py-3 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-outline-dark btn-md" href="#">Ver detalles</a></div>
+                                </div>
+                                <div class="card-footer px-1 py-3 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-dark-blue btn-outline-primary btn-md" href="#">Agregar juego</a></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -515,7 +962,7 @@
         </section>
         <!-- Footer-->
         <footer class="py-5 bg-dark">
-            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p></div>
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Gameshop 2023</p></div>
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
