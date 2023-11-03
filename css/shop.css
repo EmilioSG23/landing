@@ -78,6 +78,11 @@
     object-fit: cover;
     overflow: hidden;
 }
+.card.mb-3 img{
+    height: 275px !important;
+    object-fit: cover;
+    overflow: hidden;
+}
 .bg-yellow{
     --bs-bg-opacity: 1;
     background-color: rgba(255,255,0, var(--bs-bg-opacity)) !important;
@@ -90,13 +95,48 @@
     --bs-bg-opacity: 1;
     background-color: rgb(255,0,0, var(--bs-bg-opacity)) !important;
 }
+.bg-gradient-black-transparent{
+    background: rgb(13,13,13);
+    background: radial-gradient(circle, rgba(13,13,13,0.7) 90%, rgba(255,255,255,0) 100%);
+}
 #gameshop_header{
     font-family: "Press Start 2P";
 }
-#page_header{
+#catalogo_header{
     --img: url(https://media.revistagq.com/photos/645dde361c98f4b147443172/16:9/w_2560%2Cc_limit/100%2520mejores%2520videojuegos%2520gq.png);
     --grad01: radial-gradient(circle, rgb(75, 75, 75) 0%, var(--bs-body-bg) 100%);
 
+    background-size: 100%;
+    background-image:
+        var(--img),
+        var(--grad01);
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+#comunidad_header{
+    --img: url(https://blog.nissei.com/hubfs/Gamers%20Club%20-%20Contenido%201.jfif);
+    --grad01: radial-gradient(circle, rgb(75, 75, 75) 0%, var(--bs-body-bg) 100%);
+
+    background-size: 100%;
+    background-image:
+        var(--img),
+        var(--grad01);
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+.card.mb-4.row.g-0.col-md-2 img{
+    height: 275px !important;
+    object-fit: cover;
+    overflow: hidden;
+}
+@media (max-width: 575px){
+    .card .row.no-gutters img{
+        display:none;
+    }
+}
+#quienes_somos_header{
+    --img: url(https://media.revistagq.com/photos/645dde361c98f4b147443172/16:9/w_2560%2Cc_limit/100%2520mejores%2520videojuegos%2520gq.png);
+    --grad01: radial-gradient(circle, rgb(75, 75, 75) 0%, var(--bs-body-bg) 100%);
     background-size: 100%;
     background-image:
         var(--img),
